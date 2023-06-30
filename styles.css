@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#workoutPlan {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.exercise {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: yellow;
+}
+
+.complete {
+    background-color: green;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (min-width: 600px) {
+    .exercise {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 900px) {
+    .exercise {
+        width: calc(33% - 20px);
+    }
+}
